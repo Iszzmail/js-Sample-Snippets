@@ -1,0 +1,20 @@
+const a =['malayalam','racecar','mani','test']
+
+const palindrom =(x)=>{
+  let temp=''
+  for(let i=0;i<=x.length-1;i++){
+  temp = x[i]
+    let palin=''
+    for(let j=x[i].length-1;j>=0;j--){
+      palin+=x[i][j]
+    }
+    if(temp===palin){
+      console.log(`${temp} is a palindrome`)
+    }
+    else{
+      console.log(`${temp} is not a palindrome`)
+    }
+  }
+}
+
+palindrom(a)
